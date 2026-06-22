@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SipNNibbleByTy | Gourmet Pastries, Snacks & Refreshing Drinks</title>
+    <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
+    
+    <!-- Meta SEO Tags -->
+    <meta name="description" content="Discover SipNNibbleByTy's delicious selection of ready-to-fry small chops, meat pies, doughnuts, chinchin, cookies, banana bread, cake tubs, and our signature Fruity Zobo. Order online for delivery!">
+    <meta name="keywords" content="pastries, snacks, small chops Lagos, meat pie, banana bread, cake tubs, Fruity Zobo, puff puff, catering Lagos, SipNNibbleByTy">
+    <meta name="author" content="SipNNibbleByTy">
+    <meta property="og:title" content="SipNNibbleByTy | Gourmet Pastries, Snacks & Drinks">
+    <meta property="og:description" content="Order fresh, mouthwatering pastries, customized platters, and refreshing drinks. Handcrafted with love and delivered to you.">
+    <meta property="og:image" content="assets/images/logo.jpg">
+    <meta property="og:url" content="https://instagram.com/sipnnibble_byty">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts (Outfit & Playfair Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo-wrapper">
+                <img src="assets/images/logo.jpg" alt="SipNNibbleByTy Logo" class="brand-logo">
+                <span class="brand-name">Sip<span>N</span>Nibble</span>
+            </a>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#menu-section" class="nav-link">Menu</a></li>
+                    <li><a href="#special-offers" class="nav-link">Special Combo</a></li>
+                    <li><a href="#about-us" class="nav-link">Our Story</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button id="cart-toggle-btn" class="cart-trigger" aria-label="Open Shopping Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#" class="mobile-nav-link">Home</a></li>
+                <li><a href="#menu-section" class="mobile-nav-link">Menu</a></li>
+                <li><a href="#special-offers" class="mobile-nav-link">Special Combo</a></li>
+                <li><a href="#about-us" class="mobile-nav-link">Our Story</a></li>
+                <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-tagline"><i class="fa-solid fa-cookie-bite"></i> Handcrafted Pastries & Drinks</span>
+                    <h1 class="hero-title">Sip. Nibble. <br><span>Fall In Love.</span></h1>
+                    <p class="hero-description">Experience gourmet pastries, freshly prepared snacks, custom event platters, and refreshing drinks crafted to make every bite unforgettable.</p>
+                    <div class="hero-actions-group">
+                        <a href="#menu-section" class="btn btn-primary">Order Now <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#menu-section" class="btn btn-secondary-outline">View Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-features container">
+                <div class="feature-item">
+                    <div class="icon-circle"><i class="fa-solid fa-clock"></i></div>
+                    <h3>Freshly Baked</h3>
+                    <p>Made fresh to order daily with the finest ingredients.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>WhatsApp Checkout</h3>
+                    <p>Select your items online and complete order via WhatsApp.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon-circle"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                    <h3>Events & Platters</h3>
+                    <p>Custom party small chops tailored to your occasions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Combo Banner ("I Deserve It Weekend Treat") -->
+        <section id="special-offers" class="combo-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">Limited Offer Combo</span>
+                    <h2 class="section-title">I Deserve It Weekend Treat</h2>
+                    <p class="section-desc">Because you worked hard all week! Pamper yourself with our ultimate weekend combo platter designed just for you.</p>
+                </div>
+                
+                <div class="combo-card-highlight">
+                    <div class="combo-image">
+                        <img src="assets/images/weekend-treat.jpg" alt="I Deserve It Weekend Treat Platter" onerror="this.src='https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&q=80&w=800'">
+                        <span class="combo-tag">Best Seller</span>
+                    </div>
+                    <div class="combo-details">
+                        <h3 class="combo-title">I Deserve It Weekend Treat Platter</h3>
+                        <div class="combo-price-row">
+                            <span class="price">₦7,500</span>
+                            <span class="badge badge-success">Weekend Special Only</span>
+                        </div>
+                        <p class="combo-text">Treat yourself to a flavorful explosion of our favorite treats packed into one amazing package. Perfect for solo indulgence or sharing!</p>
+                        
+                        <h4 class="combo-includes-title">What's Inside:</h4>
+                        <ul class="combo-includes-list">
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>Samosas</strong> (Crispy golden shells filled with seasoned meat)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>Spring Rolls</strong> (Crispy wrapper packed with fresh seasoned vegetables)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>Puff-Puff</strong> (Soft, fluffy, and sweet golden dough balls)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>Succulent Chicken</strong> (Savory, spiced, and grilled/fried to perfection)</li>
+                            <li><i class="fa-solid fa-circle-check"></i> <strong>Fruity Zobo</strong> (Chilled, refreshing, fruit-infused local hibiscus drink)</li>
+                        </ul>
+                        
+                        <div class="combo-customization">
+                            <label for="weekend-treat-note">Special Notes/Customizations:</label>
+                            <input type="text" id="weekend-treat-note" placeholder="e.g., Spicy chicken, extra puff-puff, etc.">
+                        </div>
+
+                        <button class="btn btn-secondary add-combo-to-cart-btn" data-id="weekend-treat" data-price="7500" data-name="I Deserve It Weekend Treat">
+                            Add Platter to Cart <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Catalogue Section -->
+        <section id="menu-section" class="menu-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">Fresh & Delightful</span>
+                    <h2 class="section-title">Our Tasty Catalogue</h2>
+                    <p class="section-desc">Browse through our menu categories and add your favorite pastries, snacks, and drinks to your cart.</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="category-filters-container">
+                    <div class="category-tabs">
+                        <button class="filter-tab active" data-filter="all">All Items</button>
+                        <button class="filter-tab" data-filter="pastries">Pastries & Snacks</button>
+                        <button class="filter-tab" data-filter="drinks">Drinks</button>
+                        <button class="filter-tab" data-filter="platters">Catering Platters</button>
+                        <button class="filter-tab" data-filter="specials">Special Offers</button>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="products-grid">
+                    <!-- Dynamic Javascript loading of cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="about-section section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-images">
+                        <div class="img-large">
+                            <img src="assets/images/logo.jpg" alt="SipNNibbleByTy Brand Logo Big">
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <span class="subtitle">The Heart Behind the Bites</span>
+                        <h2 class="section-title">The SipNNibbleByTy Story</h2>
+                        <p class="about-p">At <strong>SipNNibbleByTy</strong>, we believe that food is not just about eating—it's an experience. Founded with a passion for baking and mixology, we set out to craft high-quality pastries and refreshing drinks that create moments of pure delight. Every recipe is meticulously perfected, from the crispy layers of our meat pies to the cold, sweet, refreshing taste of our Fruity Zobo.</p>
+                        
+                        <div class="about-features">
+                            <div class="about-feat-item">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <div>
+                                    <h4>Hygiene & Quality First</h4>
+                                    <p>We source only the premium, fresh ingredients and bake under clean, hygienic conditions.</p>
+                                </div>
+                            </div>
+                            <div class="about-feat-item">
+                                <i class="fa-solid fa-face-smile-beam"></i>
+                                <div>
+                                    <h4>Baked with Passion</h4>
+                                    <p>Our treats aren't mass-produced. They are handcrafted with love, ensuring an authentic taste.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mission-statement">
+                            <blockquote>
+                                "Our mission is simple: to make every moment worth celebrating with a sip of our drinks and a nibble of our pastries."
+                                <cite>— Ty, Founder of SipNNibbleByTy</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">Visual Feast</span>
+                    <h2 class="section-title">Our Food Gallery</h2>
+                    <p class="section-desc">A visual tour of the mouth-watering delights we prepare for our customers daily.</p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/images/weekend-treat.jpg" alt="Weekend Platter Closeup" class="gallery-img" onerror="this.src='https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&q=80&w=800'">
+                        <div class="gallery-overlay">
+                            <h4>Weekend Combo Platter</h4>
+                            <p>Samosa, puff-puff, chicken, & drinks</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/banana-bread.jpg" alt="Banana Bread slices" class="gallery-img" onerror="this.src='https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&q=80&w=800'">
+                        <div class="gallery-overlay">
+                            <h4>Banana Bread Flavour Mix</h4>
+                            <p>Fluffy & naturally sweet slices</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/fruity-zobo.jpg" alt="Fruity Zobo glass" class="gallery-img" onerror="this.src='https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=800'">
+                        <div class="gallery-overlay">
+                            <h4>Refreshing Fruity Zobo</h4>
+                            <p>Naturally infused hibiscus tea</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/cookies.jpg" alt="Freshly baked cookies" class="gallery-img" onerror="this.src='https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&q=80&w=800'">
+                        <div class="gallery-overlay">
+                            <h4>Chocolate Chip Cookies</h4>
+                            <p>Crunchy on the edges, soft in the center</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/meat-pie.jpg" alt="Golden meat pies" class="gallery-img" onerror="this.src='https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=800'">
+                        <div class="gallery-overlay">
+                            <h4>Signature Meat Pie</h4>
+                            <p>Rich beef and potato filled pastry</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/cake-tubs.jpg" alt="Cake tub layers" class="gallery-img" onerror="this.src='https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=800'">
+                        <div class="gallery-overlay">
+                            <h4>Premium Cake Tubs</h4>
+                            <p>Indulgence layered in cups</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">Client Love</span>
+                    <h2 class="section-title">What Our Nibblers Say</h2>
+                    <p class="section-desc">Don't just take our word for it. Here is feedback from some of our recurring clients!</p>
+                </div>
+
+                <div class="testimonials-slider-container">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <div class="testimonial-card">
+                            <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="testimonial-text">"The 'I Deserve It Weekend Treat' has literally become my Sunday ritual! The puff-puff is so soft and the Fruity Zobo is the best I've ever tasted. 10/10 recommend!"</p>
+                            <h4 class="client-name">Chinedu O.</h4>
+                            <span class="client-tag">Regular Customer</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="testimonial-text">"Ordered a customized small chops platter for my baby shower. Everybody kept asking where I got the meat pie and spring rolls from. Fresh, spicy and delicious!"</p>
+                            <h4 class="client-name">Amina Y.</h4>
+                            <span class="client-tag">Event Planner</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                            <p class="testimonial-text">"I am in love with the Chocolate Chip Banana Bread. It's so moist and rich in flavor. My kids absolutely adore the cookies too. Excellent bakery!"</p>
+                            <h4 class="client-name">Tobi A.</h4>
+                            <span class="client-tag">Mother of two</span>
+                        </div>
+                    </div>
+                    <div class="slider-dots" id="slider-dots">
+                        <!-- Navigation dots generated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subtitle">Questions?</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-desc">Here are answers to the most common questions about our products, delivery, and orders.</p>
+                </div>
+
+                <div class="faq-accordion-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I place an order?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>It's simple! Browse our menu, add the items and custom flavors you want to your shopping cart, and click "Checkout". Fill in your details (name, address, delivery time), and click submit. You will be redirected to WhatsApp with your complete order message pre-filled to complete the transaction.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>When is the "I Deserve It Weekend Treat" available?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The "I Deserve It Weekend Treat" combo platter is available for order from Friday morning through Sunday evening every week. It is prepared fresh and serves as the perfect weekend relaxation meal.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you cater for events or corporate functions?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we do! We provide customized Small Chops Platters and drink supplies for parties, baby showers, office meetings, and events. You can select "Small Chops Platter" from our Menu or use the WhatsApp floating widget to request a personalized quotation for your event size.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How far in advance should I order?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For standard menu orders, we recommend ordering at least 4-6 hours in advance as all pastries are baked fresh. For customized platters and large catering orders, we require a minimum of 24 to 48 hours notice.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you offer delivery?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer delivery services. Delivery fees are calculated based on your distance/location from our kitchen hub. Pickup options are also available and can be selected during checkout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-details-box">
+                        <span class="subtitle">Reach Out To Us</span>
+                        <h2 class="section-title">Get In Touch</h2>
+                        <p class="contact-box-desc">Have questions about our catering, delivery zones, or need custom requests? Contact us through any of the channels below.</p>
+                        
+                        <div class="contact-info-list">
+                            <a href="tel:+2348160882474" class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p>+234 816 088 2474</p>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/2348160882474" target="_blank" class="info-item">
+                                <i class="fa-brands fa-whatsapp-square"></i>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <p>+234 816 088 2474</p>
+                                </div>
+                            </a>
+                            <a href="mailto:info@sipnnibblebyty.com" class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h4>Email Address</h4>
+                                    <p>info@sipnnibblebyty.com</p>
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/sipnnibble_byty" target="_blank" class="info-item">
+                                <i class="fa-brands fa-instagram"></i>
+                                <div>
+                                    <h4>Instagram</h4>
+                                    <p>@sipnnibble_byty</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-box">
+                        <h3>Send a Quick Message</h3>
+                        <form id="general-inquiry-form">
+                            <div class="form-group">
+                                <label for="contact-name">Your Name</label>
+                                <input type="text" id="contact-name" required placeholder="e.g. John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Your Email / Phone</label>
+                                <input type="text" id="contact-email" required placeholder="e.g. johndoe@gmail.com or 080...">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-msg">Message Details</label>
+                                <textarea id="contact-msg" rows="5" required placeholder="How can we help you? Describe your catering needs or inquiries."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Inquiry <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo-wrapper">
+                    <img src="assets/images/logo.jpg" alt="SipNNibbleByTy Logo" class="brand-logo">
+                    <span class="brand-name">Sip<span>N</span>Nibble</span>
+                </a>
+                <p class="footer-desc">Crafting happiness in every bite and refreshment in every sip. Fresh, delicious, and customized just for you.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/sipnnibble_byty" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/2348160882474" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Navigation</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#menu-section"><i class="fa-solid fa-chevron-right"></i> Our Menu</a></li>
+                    <li><a href="#special-offers"><i class="fa-solid fa-chevron-right"></i> Combo Platters</a></li>
+                    <li><a href="#about-us"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#faq"><i class="fa-solid fa-chevron-right"></i> FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-hours">
+                <h3>Working Hours</h3>
+                <ul>
+                    <li><strong>Mon - Thu:</strong> 9:00 AM - 6:00 PM</li>
+                    <li><strong>Fri - Sun:</strong> 8:00 AM - 7:00 PM</li>
+                    <li><strong>Weekend Treat:</strong> Friday - Sunday</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 SipNNibbleByTy. All Rights Reserved. Crafted with love.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Drawer (Sidebar slide-out) -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Nibble Cart</h3>
+            <button class="close-cart-btn" id="close-cart-btn" aria-label="Close Cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        
+        <div class="cart-body" id="cart-body">
+            <!-- Dynamic Cart Items loaded here -->
+            <div class="empty-cart-message">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Your cart is empty. Let's add some delicious treats!</p>
+                <a href="#menu-section" class="btn btn-primary start-nibbling-btn">Browse Menu</a>
+            </div>
+        </div>
+
+        <div class="cart-footer" id="cart-footer" style="display: none;">
+            <div class="price-row">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">₦0</span>
+            </div>
+            <p class="cart-delivery-note">*Delivery charges will be calculated on WhatsApp based on location.</p>
+            <button class="btn btn-primary btn-block checkout-trigger-btn" id="checkout-trigger-btn">
+                Proceed to Checkout <i class="fa-solid fa-circle-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal Dialog -->
+    <div class="checkout-modal-overlay" id="checkout-modal-overlay">
+        <div class="checkout-modal">
+            <div class="checkout-header">
+                <h3>Complete Your Order</h3>
+                <button class="close-checkout-btn" id="close-checkout-btn" aria-label="Close Checkout">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <form id="checkout-form">
+                <div class="checkout-modal-body">
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="order-name">Your Full Name *</label>
+                            <input type="text" id="order-name" required placeholder="e.g. John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="order-phone">Active Phone Number *</label>
+                            <input type="tel" id="order-phone" required placeholder="e.g. 08160882474">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="order-method">Delivery Method *</label>
+                        <select id="order-method" required>
+                            <option value="delivery">Delivery to your location</option>
+                            <option value="pickup">Self-Pickup at kitchen hub</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="delivery-address-group">
+                        <label for="order-address">Delivery Address *</label>
+                        <textarea id="order-address" rows="2" placeholder="Street Address, Area, City (e.g. Lekki Phase 1, Lagos)"></textarea>
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="order-date">Preferred Date *</label>
+                            <input type="date" id="order-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-time">Preferred Time *</label>
+                            <input type="time" id="order-time" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="order-remarks">Additional Instructions (Optional)</label>
+                        <textarea id="order-remarks" rows="2" placeholder="e.g. Allergies, specific delivery instructions, etc."></textarea>
+                    </div>
+
+                    <div class="order-summary-box">
+                        <h4>Order Items Review</h4>
+                        <div class="order-summary-items" id="modal-summary-items">
+                            <!-- Populated dynamically -->
+                        </div>
+                        <div class="order-summary-total">
+                            <span>Total Amount:</span>
+                            <span id="modal-summary-total">₦0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-modal-footer">
+                    <button type="submit" class="btn btn-success btn-block" id="whatsapp-submit-btn">
+                        Submit Order via WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/2348160882474?text=Hello!%20I%20have%20an%20inquiry%20about%20SipNNibbleByTy..." 
+       target="_blank" 
+       class="floating-whatsapp-widget" 
+       aria-label="Contact us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="tooltip-text">Chat with Ty!</span>
+    </a>
+
+    <!-- Custom Script -->
+    <script src="js/app.js"></script>
+</body>
+</html>

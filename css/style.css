@@ -384,9 +384,14 @@ input:focus, select:focus, textarea:focus {
 }
 
 .mobile-drawer.active {
-    height: 320px;
+    height: 390px;
     border-bottom-width: 1px;
     box-shadow: var(--shadow-md);
+}
+
+.mobile-drawer {
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
 }
 
 .mobile-nav ul {
@@ -1781,6 +1786,10 @@ input:focus, select:focus, textarea:focus {
     .hero-actions-group {
         flex-direction: column;
         gap: 12px;
+        width: 100%;
+    }
+    .hero-actions-group .btn {
+        width: 100%;
     }
     .hero-features {
         grid-template-columns: 1fr;
@@ -1820,6 +1829,35 @@ input:focus, select:focus, textarea:focus {
 }
 
 @media (max-width: 480px) {
+    .header-container {
+        gap: 10px;
+    }
+    .logo-wrapper {
+        gap: 8px;
+    }
+    .brand-logo {
+        width: 42px;
+        height: 42px;
+    }
+    .brand-name {
+        font-size: 1.25rem;
+    }
+    .header-actions {
+        gap: 10px;
+    }
+    .cart-trigger {
+        width: 40px;
+        height: 40px;
+    }
+    .hero-section {
+        padding-top: 130px;
+    }
+    .hero-title {
+        font-size: 2.35rem;
+    }
+    .hero-features {
+        width: 100%;
+    }
     .gallery-grid {
         grid-template-columns: 1fr;
     }

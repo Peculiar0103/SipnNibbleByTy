@@ -475,6 +475,15 @@ function setupCheckoutEvents() {
     checkoutModalOverlay.addEventListener("click", (e) => {
         if (e.target === checkoutModalOverlay) closeCheckout();
     });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && checkoutModalOverlay.classList.contains("active")) {
+            closeCheckout();
+        }
+        if (event.key === "Escape" && cartDrawer.classList.contains("active")) {
+            closeCart();
+        }
+    });
     
     // Method dropdown toggles address field
     deliveryMethod.addEventListener("change", () => {
@@ -517,12 +526,16 @@ function openCheckout() {
     modalSummaryTotal.textContent = `₦${total.toLocaleString()}`;
     
     // Pre-fill delivery date with today's date or tomorrow
+    const today = new Date();
+    const todayString = `${today.getFullYear()}-${("0" + (today.getMonth() + 1)).slice(-2)}-${("0" + today.getDate()).slice(-2)}`;
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
     const day = ("0" + tomorrow.getDate()).slice(-2);
     const month = ("0" + (tomorrow.getMonth() + 1)).slice(-2);
     const dateString = `${tomorrow.getFullYear()}-${month}-${day}`;
-    document.getElementById("order-date").value = dateString;
+    const orderDateInput = document.getElementById("order-date");
+    orderDateInput.min = todayString;
+    orderDateInput.value = dateString;
     document.getElementById("order-time").value = "12:00";
 }
 
@@ -625,6 +638,10 @@ function setupNavigation() {
     mobileMenuToggle.addEventListener("click", () => {
         mobileMenuToggle.classList.toggle("active");
         mobileDrawer.classList.toggle("active");
+        mobileMenuToggle.setAttribute(
+            "aria-expanded",
+            String(mobileDrawer.classList.contains("active"))
+        );
     });
     
     // Close mobile drawer when link is clicked
@@ -635,8 +652,9 @@ function setupNavigation() {
             
             mobileMenuToggle.classList.remove("active");
             mobileDrawer.classList.remove("active");
+            mobileMenuToggle.setAttribute("aria-expanded", "false");
             
-            if (targetId === "#") {
+            if (targetId === "#home") {
                 window.scrollTo({ top: 0, behavior: "smooth" });
             } else {
                 const targetEl = document.querySelector(targetId);
@@ -645,6 +663,15 @@ function setupNavigation() {
                 }
             }
         });
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && mobileDrawer.classList.contains("active")) {
+            mobileMenuToggle.classList.remove("active");
+            mobileDrawer.classList.remove("active");
+            mobileMenuToggle.setAttribute("aria-expanded", "false");
+            mobileMenuToggle.focus();
+        }
     });
     
     // Category tabs filter switching
@@ -671,10 +698,12 @@ function setupFAQAccordion() {
             // Close other FAQ items
             document.querySelectorAll(".faq-item").forEach(item => {
                 item.classList.remove("active");
+                item.querySelector(".faq-question").setAttribute("aria-expanded", "false");
             });
             
             if (!isActive) {
                 currentItem.classList.add("active");
+                question.setAttribute("aria-expanded", "true");
             }
         });
     });
